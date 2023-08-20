@@ -1,0 +1,77 @@
+<link rel="stylesheet" href="styles.css">
+<body>
+<h1 id="title">Covid Survey Form</h1>
+<p id="description">Thank you for taking the time to help us to improve the world covid data.</p>
+
+<form id="survey-form">
+
+<div class="input-element">
+  <label id="name-label">
+ Name<br>
+ </label>
+  <input placeholder="name" id="name" type="text" required/>
+</div>
+
+<div class="input-element">
+  <label id="email-label">
+ Email<br>
+ </label>
+  <input placeholder="email" id="email" type="email" required/>
+</div>
+
+<div class="input-element">
+  <label id="number-label">
+ Age<br>
+ </label>
+  <input placeholder="age" id="number" type="number" required min="1" max="100" />
+
+<div class="input-element">
+  <label id="select-label">
+ Have you ever been infected by COVID-19 ?<br>
+  <select id="dropdown"> 
+    <option>YES</option>
+    <option>NO</option>
+  </select>
+    </div>
+
+    <div class="input-element">
+      <label id="radio">
+  If yes, then was it?
+  </label>
+  <div>
+  <label><input type="radio" name="game" value="mild">MILD</label></div>
+  <div><label><input type="radio" name="game" value="moderate">MODERATE</label></div>
+  <div><label><input type="radio" name="game" value="serve">SERVE</label>
+      </div>
+
+  <div class="input-element">
+      <label id="checkbox">
+        Which sorts of symptoms were you facing?
+  </label>
+  </div>
+
+    <div>
+  <label><input type="checkbox" name="symptoms" value="Fever">High Fever</label>
+  </div>
+  <div>
+  <label><input type="checkbox" name="symptoms" value="Oxygen">Low Oxygen Level</label>
+  </div>
+  <div>
+  <label><input type="checkbox" name="symptoms" value="Breathing">Difficulty Breathing</label>
+  </div>
+  <div>
+  <label><input type="checkbox" name="symptoms" value="body pain">Muscle or body aches</label>
+  </div>
+  <div>
+  <label><input type="checkbox" name="symptoms" value="runny nose">Congestion or runny nose</label>
+  </div>
+   <div>
+  <label><input type="checkbox" name="none" value="others">Others</label>
+  </div>
+  <div class="input-element">
+    <label id="text">Additional Consequences faced by you</label>
+    <textarea type="text"></textarea>
+    </div>
+    <button type="submit" id="submit">Submit</button>
+</form>
+</body>
